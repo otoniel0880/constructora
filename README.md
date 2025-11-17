@@ -5,119 +5,100 @@ Sitio web profesional para el Ingeniero Civil Ramón Morla.
 ## 📁 Archivos del Proyecto
 
 ```
-index.html/
 ├── index.html          # Página principal
 ├── styles.css          # Estilos CSS
-├── otoniel.png         # Foto de perfil
-├── imagenes/           # Carpeta para imágenes de proyectos
-├── roblox_the_crew/    # Juego de Roblox (proyecto adicional)
+├── otoniel.png         # Foto de perfil del ingeniero
 └── README.md           # Este archivo
 ```
 
 ## 🌐 Contenido de la Página
 
 ### Secciones:
-1. **Header** - Nombre, título y foto de perfil
-2. **Servicios** - Diseño estructural, supervisión y consultoría
-3. **Trayectoria** - Experiencia profesional
-4. **Proyectos** - Galería de trabajos realizados
-5. **Contacto** - Información de contacto
+1. **Header** - Foto de perfil, nombre y especialidades
+2. **Servicios** - Diseño estructural, supervisión de obras y consultoría técnica
+3. **Trayectoria** - Experiencia profesional y formación
+4. **Proyectos** - Galería con 3 proyectos destacados
+5. **Contacto** - Email, teléfono y ubicación
 6. **Footer** - Derechos reservados
 
-## 🎨 Características
+## 🎨 Características del Diseño
 
-- ✅ Diseño responsive (se adapta a móviles)
-- ✅ Colores profesionales
-- ✅ Efectos hover en tarjetas
-- ✅ Galería de proyectos con imágenes
-- ✅ Foto de perfil circular
-- ✅ Gradientes modernos
+- ✅ Diseño responsive (móviles, tablets y desktop)
+- ✅ Foto de perfil circular con borde blanco
+- ✅ Gradiente azul en el header
+- ✅ Tarjetas con efecto hover
+- ✅ Galería de proyectos con overlay
+- ✅ Colores profesionales (azul, naranja, gris)
+
+## 📋 Código HTML (index.html)
+
+El archivo contiene:
+- **Header** con foto de perfil (`otoniel.png`)
+- **3 tarjetas de servicios** con descripciones
+- **Lista de experiencia** profesional
+- **3 proyectos** con imágenes de Unsplash
+- **3 tarjetas de contacto** con iconos
+- **Footer** con copyright
+
+## 🎨 Código CSS (styles.css)
+
+Estilos incluidos:
+- **Reset CSS** (`* { margin: 0; padding: 0; }`)
+- **Foto de perfil** circular de 200x200px
+- **Grid responsive** para servicios y proyectos
+- **Efectos hover** en tarjetas (translateY)
+- **Overlay** en imágenes de proyectos
+- **Media queries** para móviles (max-width: 768px)
 
 ## 🚀 Cómo Abrir la Página
 
-### Opción 1: Doble Click
-- Busca el archivo `index.html`
-- Haz doble click
-
-### Opción 2: Desde el Navegador
-1. Abre Chrome, Edge o Firefox
-2. Presiona `Ctrl + O`
-3. Busca: `C:\Users\Desarrollo\Desktop\index.html\index.html`
-4. Abre el archivo
-
-### Opción 3: Desde VS Code
-1. Presiona `F5`
-2. O click derecho en `index.html` → Open with Live Server
-
-### Opción 4: Copiar Ruta
-Pega esto en tu navegador:
+Pega esta ruta en tu navegador:
 ```
 file:///C:/Users/Desarrollo/Desktop/index.html/index.html
 ```
 
-## 🛠️ Tecnologías Usadas
-
-- **HTML5** - Estructura de la página
-- **CSS3** - Estilos y diseño
-- **Imágenes** - PNG para perfil, URLs para proyectos
-
-## 📝 Personalización
-
-### Cambiar Información de Contacto
-Edita en `index.html` líneas 108-120:
-```html
-<h3>📧 Escríbeme</h3>
-<p>tu-email@ejemplo.com</p>
+O desde la terminal:
+```cmd
+start index.html
 ```
 
-### Cambiar Colores
-Edita en `styles.css`:
-```css
-/* Color principal */
-background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+## 🛠️ Tecnologías
 
-/* Color de acento */
-background-color: #e67e22;
-```
+- **HTML5** - Estructura semántica
+- **CSS3** - Estilos, gradientes, grid, flexbox
+- **Imágenes** - otoniel.png (local) + Unsplash (proyectos)
 
-### Agregar Más Proyectos
-Copia este bloque en `index.html` dentro de `.project-grid`:
-```html
-<div class="project-card">
-    <img src="tu-imagen.jpg" alt="Descripción">
-    <div class="project-info">
-        <h3>Nombre del Proyecto</h3>
-        <p>Descripción breve</p>
-    </div>
-</div>
-```
+## 📝 Información del Ingeniero
 
-## 📸 Cambiar Foto de Perfil
+**Nombre:** Ing. Ramón Morla  
+**Profesión:** Ingeniero Civil  
+**Especialidades:**
+- Diseño Estructural
+- Gestión de Proyectos
+- Consultoría
 
-1. Guarda tu nueva foto como `otoniel.png`
-2. Colócala en la misma carpeta que `index.html`
-3. Recarga la página
+**Experiencia:**
+- Gerente de proyectos en Construcciones y Diseños Morla Reyes
+- Supervisor en Hotel Dreams La Romana (Hilton)
+- Coordinador en Ecolab Microtek
+- Remodelación Escuela Básica Km 14 Cumayasa
 
-## 🐛 Solución de Problemas
+**Contacto:**
+- 📧 ing.morla@construye.do
+- 📞 +1 (809) 555-0123
+- 📍 Santo Domingo, República Dominicana
 
-**La página no abre:**
-- Verifica que `index.html` y `styles.css` estén en la misma carpeta
-- Usa la ruta completa: `C:\Users\Desarrollo\Desktop\index.html\index.html`
+## 📱 Responsive Design
 
-**No se ven los estilos:**
-- Verifica que `styles.css` exista
-- Revisa que el link en el HTML sea correcto: `<link rel="stylesheet" href="styles.css">`
+**Desktop (>768px):**
+- Grid de 3 columnas para servicios y proyectos
+- Foto de perfil 200x200px
+- Título 3rem
 
-**La imagen no carga:**
-- Verifica que `otoniel.png` esté en la misma carpeta
-- Revisa el nombre del archivo (mayúsculas/minúsculas)
-
-## 📱 Responsive
-
-La página se adapta automáticamente a:
-- 📱 Móviles (menos de 768px)
-- 💻 Tablets y laptops
-- 🖥️ Pantallas grandes
+**Mobile (<768px):**
+- Grid de 1 columna
+- Título 2rem
+- Expertise en columna
 
 ## 📄 Licencia
 
@@ -125,6 +106,5 @@ La página se adapta automáticamente a:
 
 ---
 
-**Creado por:** Otoniel  
-**Fecha:** Noviembre 2025  
-**Versión:** 1.0
+**Desarrollado por:** Otoniel  
+**Fecha:** Noviembre 2025
